@@ -31,9 +31,9 @@ export default function Home() {
           {/* Left: Artist Photo */}
           <div className="col-span-5 flex justify-start pt-8">
             <img
-              src="/manus-storage/artist-portrait_6ca320e6.png"
+              src="/manus-storage/m5rizh_1f074ed7.jpg"
               alt="Yoichi Takada, contemporary artist"
-              className="w-full aspect-[3/4] object-cover grayscale"
+              className="w-full aspect-square object-cover"
             />
           </div>
 
