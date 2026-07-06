@@ -11,9 +11,6 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
-          <Link href="/" className="text-xs font-sans font-semibold tracking-[0.15em] hover:opacity-70 transition-opacity uppercase">
-            Yoichi Takada
-          </Link>
           <div className="flex gap-8 text-sm">
             <Link href="/" className="font-semibold">Home</Link>
             <Link href="/live" className="hover:opacity-70 transition-opacity">Live</Link>
