@@ -21,9 +21,16 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* Hero Title Section */}
+      <section className="container max-w-6xl mx-auto px-4 pt-16 pb-12">
+        <h1 className="text-8xl font-serif font-semibold leading-tight tracking-tight">
+          Yoichi Takada
+        </h1>
+      </section>
+
       {/* Hero Section - Asymmetric Layout */}
       <main>
-        <section className="container max-w-6xl mx-auto px-4 pt-32 pb-24 grid grid-cols-12 gap-12 items-start min-h-[80vh]">
+        <section className="container max-w-6xl mx-auto px-4 pb-24 grid grid-cols-12 gap-12 items-start">
           {/* Left: Artist Photo */}
           <div className="col-span-5 flex justify-start pt-8">
             <img
@@ -36,10 +43,9 @@ export default function Home() {
           {/* Right: Title & Info */}
           <div className="col-span-7 flex flex-col justify-start gap-12 pt-12">
             <div>
-              <h1 className="text-7xl font-serif font-semibold leading-tight mb-6">Yoichi<br />Takada</h1>
-              <div className="w-16 h-px bg-foreground mb-12"></div>
-              <p className="text-base text-muted-foreground leading-relaxed max-w-sm font-light">
-                Artist working with form and presence.
+              <div className="w-16 h-px bg-foreground mb-8"></div>
+              <p className="text-base text-muted-foreground leading-relaxed max-w-xl font-light">
+                2006年生まれ、作曲家・ギタリスト。2022年よりAnnoyzにて活動。その傍ら、光分解や零進法 (band set) でのサポートも行った。2026年7月にAnnoyz活動休止後、ソロ活動開始。
               </p>
             </div>
 
