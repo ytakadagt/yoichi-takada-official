@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect
+      const path = window.location.pathname;
+      const segments = path.split('/');
+      
+      // Remove empty segments and reconstruct path
+      const cleanSegments = segments.filter(s => s && s !== 'yoichi-takada-official');
+      const redirectPath = cleanSegments.length > 0 ? '/' + cleanSegments.join('/') : '/';
+      
+      // Redirect to index.html with the path as query parameter
+      sessionStorage.redirect = redirectPath;
+      window.location.href = '/yoichi-takada-official/';
+    </script>
+  </head>
+  <body></body>
+</html>
