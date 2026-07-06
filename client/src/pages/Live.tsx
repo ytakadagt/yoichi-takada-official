@@ -34,7 +34,17 @@ export default function Live() {
       {/* Footer */}
       <footer className="border-t border-border mt-32">
         <div className="container max-w-5xl mx-auto px-4 py-12 text-center text-xs text-muted-foreground tracking-widest">
-          <p>© YOICHI TAKADA</p>
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex gap-8">
+              <a href="https://x.com/takada_yoichi" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
+                Twitter
+              </a>
+              <a href="https://www.instagram.com/yoichitakada_?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">
+                Instagram
+              </a>
+            </div>
+            <p>© YOICHI TAKADA</p>
+          </div>
         </div>
       </footer>
     </div>
