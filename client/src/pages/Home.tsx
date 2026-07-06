@@ -12,8 +12,8 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
           <div className="flex gap-8 text-sm">
-            <Link href="/" className="font-semibold">Home</Link>
-            <Link href="/live" className="hover:opacity-70 transition-opacity">Live</Link>
+            <a href="#/" className="font-semibold hover:opacity-70 transition-opacity">Home</a>
+            <a href="#/live" className="hover:opacity-70 transition-opacity">Live</a>
           </div>
         </div>
       </nav>

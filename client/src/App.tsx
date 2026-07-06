@@ -1,12 +1,33 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
+import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Live from "./pages/Live";
 
+// Hash-based routing for GitHub Pages compatibility
+function useHashLocation() {
+  const [location, setLocation] = useLocation();
+  
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1) || "/";
+      setLocation(hash);
+    };
+    
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange();
+    
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [setLocation]);
+  
+  return [location, (path: string) => {
+    window.location.hash = path;
+  }] as const;
+}
 
 function Router() {
   return (
